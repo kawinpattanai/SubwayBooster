@@ -30,6 +30,5 @@ def download_assets(assets):
 
 
 if __name__ == "__main__":
-    release_assets = get_release_assets()
-    if release_assets:
+    if release_assets := get_release_assets():
         download_assets(release_assets)
